@@ -112,7 +112,7 @@
                 <a href="#services" class="hover:text-purple-700 transition">ဝန်ဆောင်မှုများ</a>
                 <a href="#pricing" class="hover:text-purple-700 transition">စျေးနှုန်းများ</a>
                 <a href="#testimonials" class="hover:text-purple-700 transition">သုံးသပ်ချက်များ</a>
-                <a href="#contact" class="hover:text-purple-700 transition">ဆက်သွယ်ရန်</a>
+
             </div>
             <div class="md:hidden">
                 <button id="menu-toggle" class="focus:outline-none">
@@ -166,7 +166,7 @@
         </div>
     </section>
 
-    
+
 
     <!-- Features Section -->
     <section class="py-16 bg-gray-50">
@@ -240,7 +240,7 @@
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Spotify Premium</h3>
                         <p class="text-gray-600 mb-4">ကြော်ငြာမပါဘဲ သီချင်းများကို အရည်အသွေးမြင့်စွာ နားဆင်နိုင်ပါပြီ။
                             သီချင်းများကို ဒေါင်းလုဒ်ဆွဲ၍ အင်တာနက်မရှိဘဲ နားဆင်နိုင်ပါသည်။</p>
-                        <a href="https://www.facebook.com/share/16fQdzEtqo/?mibextid=wwXIfr" target="_blank"
+                        <a href="https://www.facebook.com/share/p/1WyXBMWoGJ/" target="_blank"
                             class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition inline-block">အသေးစိတ်ကြည့်ရှုရန်</a>
                     </div>
                 </div>
@@ -578,7 +578,8 @@
 
             <!-- Microsoft & Windows Pricing -->
             <div>
-                <h3 class="text-2xl font-bold text-center mb-8 text-blue-700">Microsoft ထုတ်ကုန်များ</h3>
+                <h3 class="text-2xl font-bold text-center mb-8 text-blue-700">Microsoft နှင့်သက်ဆိုင်သောsoftwareများ
+                </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <div
                         class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 transition duration-300 card-hover">
@@ -596,16 +597,15 @@
                                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="text-gray-600">Word, Excel, PowerPoint</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <span class="text-gray-600">စက် ၅ လုံးအထိ</span>
+                                    <span class="text-gray-600">Word, Excel, PowerPoint,Outlook</span>
+                                </li <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">စက် ၅ လုံးအထိ</span>
                                 </li>
                                 <li class="flex items-center">
                                     <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"
@@ -798,18 +798,78 @@
                     </div>
                 </div>
             </div>
-<!-- About Us Section -->
+
+            <!-- Add Review Form -->
+            <div class="bg-gray-50 rounded-xl p-8 max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">သင့်သုံးသပ်ချက်ကို ပေးပို့ပါ</h3>
+                <form id="reviewForm" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="reviewerName" class="block text-sm font-medium text-gray-700 mb-2">အမည်</label>
+                            <input type="text" id="reviewerName" name="reviewerName" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                placeholder="သင့်အမည်ကို ရေးပါ">
+                        </div>
+                        <div>
+                            <label for="serviceType"
+                                class="block text-sm font-medium text-gray-700 mb-2">ဝန်ဆောင်မှုအမျိုးအစား</label>
+                            <select id="serviceType" name="serviceType" required
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">ရွေးချယ်ပါ</option>
+                                <option value="Spotify Premium">Spotify Premium</option>
+                                <option value="Netflix">Netflix</option>
+                                <option value="Express VPN">Express VPN</option>
+                                <option value="Microsoft Office 365">Microsoft Office 365</option>
+                                <option value="Windows License">Windows License</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="rating"
+                            class="block text-sm font-medium text-gray-700 mb-2">အဆင့်သတ်မှတ်ချက်</label>
+                        <div class="flex space-x-1" id="starRating">
+                            <button type="button" class="star-btn text-gray-300 hover:text-yellow-400 text-2xl"
+                                data-rating="1">★</button>
+                            <button type="button" class="star-btn text-gray-300 hover:text-yellow-400 text-2xl"
+                                data-rating="2">★</button>
+                            <button type="button" class="star-btn text-gray-300 hover:text-yellow-400 text-2xl"
+                                data-rating="3">★</button>
+                            <button type="button" class="star-btn text-gray-300 hover:text-yellow-400 text-2xl"
+                                data-rating="4">★</button>
+                            <button type="button" class="star-btn text-gray-300 hover:text-yellow-400 text-2xl"
+                                data-rating="5">★</button>
+                        </div>
+                        <input type="hidden" id="selectedRating" name="rating" required>
+                    </div>
+                    <div>
+                        <label for="reviewText" class="block text-sm font-medium text-gray-700 mb-2">သုံးသပ်ချက်</label>
+                        <textarea id="reviewText" name="reviewText" rows="4" required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            placeholder="သင့်အတွေ့အကြုံနှင့် သုံးသပ်ချက်ကို ရေးပါ"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-purple-700 transition">
+                            သုံးသပ်ချက်ပေးပို့ရန်
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->""
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 shadow-md">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">ကျွန်ုပ်တို့အကြောင်း</h2>
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">About Us</h2>
                 <div class="text-gray-700 mb-8 leading-relaxed">
                     <p class="mb-4">ပထမဆုံး အားပေးတဲ့သူတစ်ယောက်ချင်းစီကို ကျေးဇူးတင်ပါတယ်။</p>
                     <p class="mb-4">ကျွန်တော်တို့ Everything's Here က ကျွန်တော် Htet Wai Yan ကနေ ပြီး 2025 June လက
-                        စပြီး ကျွန်တော့ partner တွေဖြစ်တဲ့ Phyu Win Myat, Htet Si Thu Aung တို့နဲ့တူတူ
+                        စပြီး ကျွန်တော့partnerတွေဖြစ်တဲ့ Phyu Win Myat, Htet Si Thu Aung တို့နဲ့တူတူ
                         အကောင်ထည်ဖော်ဖြစ်ခဲ့တာပါ။</p>
-                    <p>ရည်ရွယ်ချက်ကတော့ premium service တွေကို တစ်နေရာထဲမှာ စုံစုံလင်လင်နဲ့ စိတ်ချစွာ ဝယ်ယူနိုင်ရင်
-                        အတွက် ရည်ရွယ်ထားပါတယ်။ ပိုမိုစုံလင်တဲ့ service တွေရဖို့လည်းကြိုးစားနေပါတယ်။</p>
+                    <p>ရည်ရွယ်ချက်ကတော့ premium serviceတွေကို တစ်နေရာထဲမှာ စုံစုံလင်လင်နဲ့စိတ်ချစွာ ဝယ်ယူနိုင်ရင်
+                        အတွက် ရည်ရွယ်ထားပါတယ်။ ပိုမိုစုံလင်တဲ့ serviceတွေရဖို့လည်းကြိုးစားနေပါတယ်။</p>
                 </div>
 
                 <h3 class="text-xl font-bold text-center text-gray-800 mb-4">ကျွန်ုပ်တို့၏ အဖွဲ့ဝင်များ</h3>
@@ -842,237 +902,65 @@
             </div>
         </div>
     </section>
-            <!-- Review Form -->
-            <div class="bg-white p-8 rounded-xl shadow-md max-w-2xl mx-auto">
-                <h3 class="text-2xl font-bold text-center mb-6 text-gray-800">သုံးသပ်ချက်ရေးရန်</h3>
-                <form id="reviewForm" class="space-y-4">
-                    <div>
-                        <label for="reviewName" class="block text-gray-700 mb-2">အမည်</label>
-                        <input type="text" id="reviewName"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="သင့်အမည်ကို ရိုက်ထည့်ပါ">
-                    </div>
-                    <div>
-                        <label for="reviewService" class="block text-gray-700 mb-2">ဝန်ဆောင်မှု</label>
-                        <select id="reviewService"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                            <option value="">ဝန်ဆောင်မှုရွေးချယ်ပါ</option>
-                            <option value="Spotify Premium">Spotify Premium</option>
-                            <option value="Netflix">Netflix</option>
-                            <option value="Express VPN">Express VPN</option>
-                            <option value="Microsoft Office 365">Microsoft Office 365</option>
-                            <option value="Windows License Key">Windows License Key</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="reviewText" class="block text-gray-700 mb-2">သုံးသပ်ချက်</label>
-                        <textarea id="reviewText" rows="4"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                            placeholder="သင့်သုံးသပ်ချက်ကို ရိုက်ထည့်ပါ"></textarea>
-                    </div>
-                    <div>
-                        <label class="block text-gray-700 mb-2">အဆင့်သတ်မှတ်ချက်</label>
-                        <div class="flex space-x-2">
-                            <div class="rating-stars flex text-gray-300">
-                                <span class="star cursor-pointer" data-value="1">
-                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star cursor-pointer" data-value="2">
-                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star cursor-pointer" data-value="3">
-                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star cursor-pointer" data-value="4">
-                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <span class="star cursor-pointer" data-value="5">
-                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </div>
-                            <input type="hidden" id="reviewRating" value="0">
-                        </div>
-                    </div>
-                    <a href="https://www.facebook.com/share/16fQdzEtqo/?mibextid=wwXIfr" target="_blank"
-                        class="bg-purple-600 text-white py-2 px-6 rounded-lg hover:bg-purple-700 transition inline-block">ပို့ရန်</a>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-50">
+    <!-- Contact Info Section -->
+    <section class="bg-purple-600 py-8">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">ဆက်သွယ်ရန်</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Premium ဝန်ဆောင်မှုများ ရယူလိုပါက ယခုပင် ဆက်သွယ်ပါ</p>
-            </div>
-            <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                    <form class="space-y-4">
-                        <div>
-                            <label for="name" class="block text-gray-700 mb-2">အမည်</label>
-                            <input type="text" id="name"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                placeholder="သင့်အမည်ကို ရိုက်ထည့်ပါ">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 mb-2">အီးမေးလ်</label>
-                            <input type="email" id="email"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                placeholder="သင့်အီးမေးလ်ကို ရိုက်ထည့်ပါ">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-gray-700 mb-2">ဖုန်းနံပါတ်</label>
-                            <input type="tel" id="phone"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                placeholder="သင့်ဖုန်းနံပါတ်ကို ရိုက်ထည့်ပါ">
-                        </div>
-                        <div>
-                            <label for="service" class="block text-gray-700 mb-2">ဝန်ဆောင်မှု</label>
-                            <select id="service"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
-                                <option value="">ဝန်ဆောင်မှုရွေးချယ်ပါ</option>
-                                <option value="spotify">Spotify Premium</option>
-                                <option value="netflix">Netflix</option>
-                                <option value="vpn">Express VPN</option>
-                                <option value="office">Microsoft Office 365</option>
-                                <option value="windows">Windows License Key</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-gray-700 mb-2">မက်ဆေ့ချ်</label>
-                            <textarea id="message" rows="4"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                                placeholder="သင့်မက်ဆေ့ချ်ကို ရိုက်ထည့်ပါ"></textarea>
-                        </div>
-                        <a href="https://www.facebook.com/share/16fQdzEtqo/?mibextid=wwXIfr" target="_blank"
-                            class="bg-purple-600 text-white py-2 px-6 rounded-lg hover:bg-purple-700 transition inline-block">ပို့ရန်</a>
-                    </form>
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                    <div class="bg-white p-6 rounded-xl shadow-md h-full">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4">ဆက်သွယ်ရန် အချက်အလက်များ</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div
-                                    class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
-                                    <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">လိပ်စာ</h4>
-                                    <p class="text-gray-600">Yangon,Myanmar</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div
-                                    class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
-                                    <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">ဖုန်းနံပါတ်</h4>
-                                    <p class="text-gray-600">09-774455628,09753528808,09669693855</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div
-                                    class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
-                                    <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
-                                        </path>
-                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">အီးမေးလ်</h4>
-                                    <p class="text-gray-600">riosrios1290@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div
-                                    class="bg-purple-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
-                                    <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-gray-800">အလုပ်ချိန်</h4>
-                                    <p class="text-gray-600">Everyday 24/7 </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-6">
-                            <h4 class="font-semibold text-gray-800 mb-3">ဆိုရှယ်မီဒီယာများ</h4>
-                            <div class="flex space-x-4">
-                                <a href="https://t.me/Duntrytomessup" target="_blank"
-                                    class="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.375 16.875h-.75c-3.728 0-6.75-3.022-6.75-6.75v-.75c0-3.728 3.022-6.75 6.75-6.75h.75c3.728 0 6.75 3.022 6.75 6.75v.75c0 3.728-3.022 6.75-6.75 6.75zm3.75-7.5c0-2.07-1.68-3.75-3.75-3.75h-.75c-2.07 0-3.75 1.68-3.75 3.75v.75c0 2.07 1.68 3.75 3.75 3.75h.75c2.07 0 3.75-1.68 3.75-3.75v-.75z" />
-                                    </svg>
-                                </a>
-                                <a href="https://www.facebook.com/share/16fQdzEtqo/?mibextid=wwXIfr" target="_blank"
-                                    class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16.338 16.338H13.67V12.16c0-1.005-.02-2.298-1.4-2.298-1.4 0-1.614 1.095-1.614 2.227v4.25H8.028V7.5h2.56v1.17h.037c.356-.675 1.227-1.387 2.534-1.387 2.712 0 3.21 1.785 3.21 4.108v4.948zM5.5 6.33a1.67 1.67 0 11-.002-3.34A1.67 1.67 0 015.5 6.33zm.833 10.008h-2.67V7.5h2.67v8.838z">
-                                        </path>
-                                    </svg>
-                                </a>
-                                <a href="https://www.facebook.com/share/16fQdzEtqo/?mibextid=wwXIfr" target="_blank"
-                                    class="bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 00-1.417.923A3.927 3.927 0 00.42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 001.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 00-.923-1.417A3.911 3.911 0 0013.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 01-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 01-.92-.598 2.48 2.48 0 01-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 100 1.92.96.96 0 000-1.92zm-4.27 1.122a4.109 4.109 0 100 8.217 4.109 4.109 0 000-8.217zm0 1.441a2.667 2.667 0 110 5.334 2.667 2.667 0 010-5.334z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Contact Information -->
+                <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 mb-6 md:mb-0">
+                    <!-- Phone -->
+                    <div class="flex items-center text-white">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
+                        <a href="tel:+95774455628" class="text-sm hover:text-purple-200 transition">09-774455628</a>
                     </div>
+
+                    <!-- Location -->
+                    <div class="flex items-center text-white">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-sm">Yangon, Myanmar</span>
+                    </div>
+
+                    <!-- Work Hours -->
+                    <div class="flex items-center text-white">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-sm">24/7 Available</span>
+                    </div>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="flex items-center space-x-4">
+                    <!-- Telegram -->
+                    <a href="https://t.me/Duntrytomessup" target="_blank"
+                        class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition transform hover:scale-110">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/16fQdzEtqo/?mibextid=wwXIfr" target="_blank"
+                        class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white w-10 h-10 rounded-full flex items-center justify-center transition transform hover:scale-110">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1099,13 +987,173 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-4">အသုံးဝင်သော လင့်ခ်များ</h3>
                     <ul class="space-y-2 text-gray-300">
-                        <li><a href="#about"
-                                class="hover:text<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="
-                                window.__CF$cv$params={r:'9622c45505c6fe04',t:'MTc1MzAxNzc0MS4wMDAwMDA='};var a=document.createElement('
-                                script');a.nonce='' ;a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js'
-                                ;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var
-                                a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute'
-                                ;a.style.top=0;a.style.left=0;a.style.border='none' ;a.style.visibility='hidden'
-                                ;document.body.appendChild(a);if('loading'!==document.readyState)c();else
-                                if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var
-                                e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+                        <li><a href="#about" class="hover:text-white transition">ကျွန်ုပ်တို့အကြောင်း</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">စျေးနှုန်းများ</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition">သုံးသပ်ချက်များ</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">ဆက်သွယ်ရန်</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">ဆက်သွယ်ရန်</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Facebook: Everything's Here</li>
+                        <li>Telegram: @Duntrytomessup</li>
+                        <li>အချိန်: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Everything's Here. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Review System
+        let selectedRating = 0;
+        const starButtons = document.querySelectorAll('.star-btn');
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewsContainer = document.getElementById('reviewsContainer');
+
+        // Star rating functionality
+        starButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                selectedRating = parseInt(this.dataset.rating);
+                document.getElementById('selectedRating').value = selectedRating;
+
+                // Update star display
+                starButtons.forEach((star, index) => {
+                    if (index < selectedRating) {
+                        star.classList.remove('text-gray-300');
+                        star.classList.add('text-yellow-400');
+                    } else {
+                        star.classList.remove('text-yellow-400');
+                        star.classList.add('text-gray-300');
+                    }
+                });
+            });
+        });
+
+        // Load existing reviews from localStorage
+        function loadReviews() {
+            const savedReviews = localStorage.getItem('customerReviews');
+            if (savedReviews) {
+                const reviews = JSON.parse(savedReviews);
+                reviews.forEach(review => {
+                    addReviewToDisplay(review);
+                });
+            }
+        }
+
+        // Save review to localStorage
+        function saveReview(review) {
+            let reviews = [];
+            const savedReviews = localStorage.getItem('customerReviews');
+            if (savedReviews) {
+                reviews = JSON.parse(savedReviews);
+            }
+            reviews.push(review);
+            localStorage.setItem('customerReviews', JSON.stringify(reviews));
+        }
+
+        // Add review to display
+        function addReviewToDisplay(review) {
+            const reviewElement = document.createElement('div');
+            reviewElement.className = 'testimonial-card p-6 rounded-xl shadow-md';
+
+            // Generate stars HTML
+            let starsHtml = '';
+            for (let i = 0; i < 5; i++) {
+                if (i < review.rating) {
+                    starsHtml += `<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                    </svg>`;
+                } else {
+                    starsHtml += `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.921-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                    </svg>`;
+                }
+            }
+
+            reviewElement.innerHTML = `
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-purple-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-purple-700 font-bold text-xl">${review.name.charAt(0)}</span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">${review.name}</h4>
+                        <p class="text-gray-600 text-sm">${review.service} သုံးစွဲသူ</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">"${review.text}"</p>
+                <div class="flex text-yellow-400">
+                    ${starsHtml}
+                </div>
+                <p class="text-xs text-gray-400 mt-2">${review.date}</p>
+            `;
+
+            reviewsContainer.appendChild(reviewElement);
+        }
+
+        // Handle form submission
+        reviewForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const review = {
+                name: formData.get('reviewerName'),
+                service: formData.get('serviceType'),
+                rating: parseInt(formData.get('rating')),
+                text: formData.get('reviewText'),
+                date: new Date().toLocaleDateString('my-MM')
+            };
+
+            // Validate rating
+            if (review.rating === 0) {
+                alert('ကျေးဇူးပြု၍ အဆင့်သတ်မှတ်ချက်ပေးပါ');
+                return;
+            }
+
+            // Save and display review
+            saveReview(review);
+            addReviewToDisplay(review);
+
+            // Reset form
+            this.reset();
+            selectedRating = 0;
+            starButtons.forEach(star => {
+                star.classList.remove('text-yellow-400');
+                star.classList.add('text-gray-300');
+            });
+
+            alert('သင့်သုံးသပ်ချက်ကို အောင်မြင်စွာ ပေးပို့ပြီးပါပြီ။ ကျေးဇူးတင်ပါတယ်!');
+        });
+
+        // Load reviews when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            loadReviews();
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
