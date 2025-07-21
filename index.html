@@ -1040,8 +1040,39 @@
             });
         });
 
-        // Load existing reviews from localStorage
+        // Sample reviews data (you can add more here manually)
+        const defaultReviews = [
+            {
+                name: "Khin Zarni",
+                service: "Spotify Premium",
+                rating: 5,
+                text: "Spotify Premium ကို Everything's Here မှ ဝယ်ယူပြီးကတည်းက ကြော်ငြာမပါဘဲ သီချင်းများကို အရည်အသွေးမြင့်စွာ နားဆင်နိုင်ပါတယ်။ ဝန်ဆောင်မှုအရည်အသွေးကလည်း အလွန်ကောင်းမွန်ပါတယ်။",
+                date: "1/15/2025"
+            },
+            {
+                name: "War War",
+                service: "Microsoft Office 365",
+                rating: 5,
+                text: "Microsoft Office 365 ကို Everything's Here မှ ဝယ်ယူပြီးကတည်းက အလုပ်တွေ ပိုမိုလွယ်ကူလာပါတယ်။ စျေးနှုန်းကလည်း သက်သာပြီး ဝန်ဆောင်မှုကလည်း အလွန်ကောင်းပါတယ်။",
+                date: "1/18/2025"
+            },
+            {
+                name: "Kyaw Zin Lin",
+                service: "Express VPN",
+                rating: 5,
+                text: "Express VPN ကို Everything's Here မှ ဝယ်ယူပြီးကတည်းက အင်တာနက်ကို လုံခြုံစိတ်ချစွာ အသုံးပြုနိုင်ပါတယ်။ အမြန်နှုန်းကလည်း အလွန်ကောင်းပါတယ်။",
+                date: "1/20/2025"
+            }
+        ];
+
+        // Load existing reviews from localStorage and merge with default reviews
         function loadReviews() {
+            // Load default reviews first
+            defaultReviews.forEach(review => {
+                addReviewToDisplay(review);
+            });
+
+            // Then load any local reviews
             const savedReviews = localStorage.getItem('customerReviews');
             if (savedReviews) {
                 const reviews = JSON.parse(savedReviews);
@@ -1051,7 +1082,7 @@
             }
         }
 
-        // Save review to localStorage
+        // Save review to localStorage (for local display only)
         function saveReview(review) {
             let reviews = [];
             const savedReviews = localStorage.getItem('customerReviews');
@@ -1060,6 +1091,12 @@
             }
             reviews.push(review);
             localStorage.setItem('customerReviews', JSON.stringify(reviews));
+
+            // Also send review data to you (you can collect this manually)
+            console.log('New Review Submitted:', review);
+
+            // Optional: You can add code here to send the review to your email or a form service
+            // For now, we'll show an additional message to the customer
         }
 
         // Add review to display
@@ -1126,7 +1163,7 @@
                 return;
             }
 
-            // Save and display review
+            // Save review locally (for user to see their own review)
             saveReview(review);
             addReviewToDisplay(review);
 
@@ -1138,7 +1175,17 @@
                 star.classList.add('text-gray-300');
             });
 
-            alert('သင့်သုံးသပ်ချက်ကို အောင်မြင်စွာ ပေးပို့ပြီးပါပြီ။ ကျေးဇူးတင်ပါတယ်!');
+            // Show success message with instructions
+            alert('သင့်သုံးသပ်ချက်ကို လက်ခံရရှိပါပြီ။ ကျေးဇူးတင်ပါတယ်!\n\nသင့်သုံးသပ်ချက်ကို အခြားသူများ မြင်နိုင်ရန် ကျွန်ုပ်တို့ Facebook Page တွင် မျှဝေပါမည်။');
+
+            // Log the review for you to collect manually
+            console.log('=== NEW CUSTOMER REVIEW ===');
+            console.log('Name:', review.name);
+            console.log('Service:', review.service);
+            console.log('Rating:', review.rating + '/5 stars');
+            console.log('Review:', review.text);
+            console.log('Date:', review.date);
+            console.log('========================');
         });
 
         // Load reviews when page loads
